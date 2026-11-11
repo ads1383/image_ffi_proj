@@ -1,0 +1,12 @@
+[package]
+name = "mirror_plugin"
+version.workspace = true
+edition.workspace = true
+description = "Плагин зеркального отражения изображения"
+
+[lib]
+name = "mirror"
+crate-type = ["cdylib"]
+
+[dependencies]
+plugin_interface = { path = "../plugin_interface" }

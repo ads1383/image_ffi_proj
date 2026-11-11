@@ -1,0 +1,19 @@
+[workspace]
+resolver = "3"
+members = [
+    "image_processor",
+    "plugin_interface",
+    "mirror_plugin",
+    "blur_plugin",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+
+[workspace.dependencies]
+clap = { version = "4.5", features = ["derive"] }
+env_logger = "0.11"
+image = { version = "0.25", default-features = false, features = ["png"] }
+libloading = "0.8"
+log = "0.4"

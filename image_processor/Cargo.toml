@@ -1,0 +1,13 @@
+[package]
+name = "image_processor"
+version.workspace = true
+edition.workspace = true
+description = "CLI: загрузка изображения, вызов плагина обработки и сохранение PNG"
+
+[dependencies]
+clap.workspace = true
+env_logger.workspace = true
+image.workspace = true
+libloading.workspace = true
+log.workspace = true
+plugin_interface = { path = "../plugin_interface" }

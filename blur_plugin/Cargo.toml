@@ -1,0 +1,12 @@
+[package]
+name = "blur_plugin"
+version.workspace = true
+edition.workspace = true
+description = "Плагин размытия изображения (box blur)"
+
+[lib]
+name = "blur"
+crate-type = ["cdylib"]
+
+[dependencies]
+plugin_interface = { path = "../plugin_interface" }
